@@ -23,13 +23,13 @@ Triangle::Triangle(const int a, const int b, const int c, const int A, const int
 };
 
 void Triangle::print_sides_() {
-    std::cout << " a=" << get_side_a();
-    std::cout << " b=" << get_side_b();
-    std::cout << " c=" << get_side_c();
+    std::cout << get_side_a();
+    std::cout << ", " << get_side_b();
+    std::cout << ", " << get_side_c();
 }
 
 void Triangle::print_angles_() {
-    std::cout << "\t  A=" << get_angle_a();
-    std::cout << " B=" << get_angle_b();
-    std::cout << " C=" << get_angle_c();
+    std::cout << get_angle_a();
+    std::cout << ", " << get_angle_b();
+    std::cout << ", " << get_angle_c();
 }

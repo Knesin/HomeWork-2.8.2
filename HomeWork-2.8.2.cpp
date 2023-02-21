@@ -12,12 +12,12 @@
 #include "Figure_exeption.h"
 
 void print_info(Figure& f) {
-    std::cout << f.get_name() << ":" << std::endl;
-    std::cout << "Стороны :";
+    std::cout << f.get_name() << " (" ;
+    std::cout << "cтороны : ";
     f.print_sides_();
-    std::cout << std::endl << "Углы:";
+    std::cout << "; углы: ";
     f.print_angles_();
-    std::cout << std::endl;
+    std::cout << ") ссоздан" << std::endl;
 }
 
 int main()
@@ -39,7 +39,7 @@ int main()
         print_info(*t);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Прямоугольный треугольник-------------
     try {
@@ -47,7 +47,7 @@ int main()
         print_info(*rt);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Равнобедренный треугольник-------------
     try {
@@ -55,7 +55,7 @@ int main()
         print_info(*it);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Равносторонний треугольник-------------
     try {
@@ -63,7 +63,7 @@ int main()
         print_info(*et);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Четырёхугольник-------------
     try {
@@ -71,7 +71,7 @@ int main()
         print_info(*q);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Прямоугольник-------------
     try {
@@ -79,7 +79,7 @@ int main()
         print_info(*r);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Квадрат-------------
     try {
@@ -87,7 +87,7 @@ int main()
         print_info(*sq);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Параллелограмм-------------
     try {
@@ -95,15 +95,15 @@ int main()
         print_info(*p);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
     //-----------Ромб-------------
     try {
-        rh = new Rhombus(30, 30, 40);
+        rh = new Rhombus(30, 80, 100);
         print_info(*rh);
     }
     catch (const Figure_exeption& ex) {
-        std::cout << ex.what() << std::endl << std::endl;;
+        std::cout << ex.what() << std::endl;
     };
 
     if (t != nullptr)

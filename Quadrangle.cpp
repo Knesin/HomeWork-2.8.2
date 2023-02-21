@@ -17,10 +17,10 @@ Quadrangle::Quadrangle(const int a, const int b, const int c, const int d,
 
 void Quadrangle::print_sides_() {
     Triangle::print_sides_();
-    std::cout << " d=" << get_side_d();
+    std::cout << ", " << get_side_d();
 }
 
 void Quadrangle::print_angles_() {
     Triangle::print_angles_();
-    std::cout << " D=" << get_angle_d();
+    std::cout << ", " << get_angle_d();
 }
